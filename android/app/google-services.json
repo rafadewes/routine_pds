@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1070880316820",
+    "project_id": "routine-pds",
+    "storage_bucket": "routine-pds.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070880316820:android:359f618c0a688946464381",
+        "android_client_info": {
+          "package_name": "com.rafaeladewes.routine_pds"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1070880316820-jjb1ldolqavqv27s9jjtsnqrnmo4sfru.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyClTFzV-r2GJl3KUfKR4lZI4zvUIjpSfiU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1070880316820-jjb1ldolqavqv27s9jjtsnqrnmo4sfru.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
