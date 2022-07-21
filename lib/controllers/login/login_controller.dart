@@ -3,9 +3,7 @@ import 'dart:math';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:mobx/mobx.dart';
-
 import 'package:provider/provider.dart';
-
 import '../../models/notification_service.dart';
 import '../../models/user.dart';
 import '../../repositories/user_repository.dart';

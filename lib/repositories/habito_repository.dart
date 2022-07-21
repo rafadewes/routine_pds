@@ -1,8 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-
-
 import '../models/result_message.dart';
 import '../models/user.dart';
 
@@ -19,7 +17,7 @@ class HabitoRepository {
             includeMetadataChanges: true,
           );
     } catch (e) {
-      debugPrint('Erro ao carregar emocoes');
+      debugPrint('Erro ao carregar emoções');
     }
 
     return habitos;
@@ -40,7 +38,7 @@ class HabitoRepository {
     } catch (e) {
       resultMessage = ResultMessage(
         type: 'error',
-        message: 'Erro ao carregar usuario, impossivel salvar emoção',
+        message: 'Erro ao carregar usuário, impossível salvar emoção',
       );
     }
 
@@ -54,12 +52,12 @@ class HabitoRepository {
         ).then((value) async {
           resultMessage = ResultMessage(
             type: 'success',
-            message: 'Habito adicionado com sucesso',
+            message: 'Hábito adicionado com sucesso',
           );
         }).catchError((error) async {
           resultMessage = ResultMessage(
             type: 'error',
-            message: 'Erro ao adicionar Habito: $error',
+            message: 'Erro ao adicionar hábito: $error',
           );
         });
       } else {
@@ -90,7 +88,7 @@ class HabitoRepository {
           .then((value) => debugPrint("habito removed"))
           .catchError((error) => debugPrint("Failed to update habito: $error"));
     } catch (e) {
-      debugPrint('Erro ao salvar habito $e');
+      debugPrint('Erro ao salvar hábito $e');
     }
   }
 
@@ -135,12 +133,12 @@ class HabitoRepository {
       ).then((value) async {
         resultMessage = ResultMessage(
           type: 'success',
-          message: 'Habito alterado com sucesso',
+          message: 'Hábito alterado com sucesso',
         );
       }).catchError((error) async {
         resultMessage = ResultMessage(
           type: 'error',
-          message: 'Erro ao alterar Habito: $error',
+          message: 'Erro ao alterar hábito: $error',
         );
       });
     } catch (e) {

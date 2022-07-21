@@ -8,7 +8,6 @@ import 'package:time_picker_sheet/widget/time_picker.dart';
 import 'package:top_snackbar_flutter/custom_snack_bar.dart';
 import 'package:top_snackbar_flutter/top_snack_bar.dart';
 import 'package:weekday_selector/weekday_selector.dart';
-
 import '../../controllers/habito/habito_controller.dart';
 import '../../models/result_message.dart';
 import '../../models/user.dart';
@@ -107,7 +106,7 @@ class _HabitoUpdateState extends State<HabitoUpdate> {
                         ),
                         fillColor: const Color(0xff373645),
                         contentPadding: EdgeInsets.zero,
-                        hintText: 'Nome do novo hábito',
+                        hintText: 'Novo hábito',
                         hintStyle: GoogleFonts.urbanist(
                           fontSize: 18,
                           color: Colors.grey,
@@ -231,7 +230,7 @@ class _HabitoUpdateState extends State<HabitoUpdate> {
                                     MainAxisAlignment.spaceBetween,
                                 children: [
                                   Text(
-                                    'Adicionar horarios',
+                                    'Adicionar horários',
                                     style: GoogleFonts.urbanist(
                                       fontSize: 18,
                                       color: Colors.white,
@@ -243,7 +242,7 @@ class _HabitoUpdateState extends State<HabitoUpdate> {
                                       TimePicker.show(
                                         context: context,
                                         sheet: TimePickerSheet(
-                                          sheetTitle: 'Escolha um horario',
+                                          sheetTitle: 'Escolha um horário',
                                           hourTitle: 'Hora',
                                           minuteTitle: 'Minutos',
                                           saveButtonText: 'Salvar',
@@ -362,7 +361,7 @@ class _HabitoUpdateState extends State<HabitoUpdate> {
                           context,
                           CustomSnackBar.info(
                             backgroundColor: Colors.orange,
-                            message: 'Você deve adicionar uma nome ao hábito',
+                            message: 'Você deve adicionar um nome ao hábito',
                             textStyle:
                                 GoogleFonts.urbanist(color: Colors.white),
                           ),

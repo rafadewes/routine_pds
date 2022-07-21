@@ -1,7 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
-
 import '../models/result_message.dart';
 import '../models/user.dart';
 
@@ -19,7 +18,7 @@ class EmocionarioRepository {
             includeMetadataChanges: true,
           );
     } catch (e) {
-      debugPrint('Erro ao carregar emocoes');
+      debugPrint('Erro ao carregar emoções');
     }
 
     return emotions;
@@ -41,7 +40,7 @@ class EmocionarioRepository {
     } catch (e) {
       resultMessage = ResultMessage(
         type: 'error',
-        message: 'Erro ao carregar usuario, impossivel salvar emoção',
+        message: 'Erro ao carregar usuário, impossível salvar emoção',
       );
     }
 
@@ -133,7 +132,7 @@ class EmocionarioRepository {
           .then((value) => debugPrint("emocao Updated"))
           .catchError((error) => debugPrint("Failed to update emocao: $error"));
     } catch (e) {
-      debugPrint('Erro ao salvar emocao $e');
+      debugPrint('Erro ao salvar emoção $e');
     }
   }
 }

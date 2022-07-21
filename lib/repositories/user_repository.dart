@@ -13,7 +13,7 @@ class UserRepository {
     try {
       user = await firebase.collection('users').doc(id).get();
     } catch (e) {
-      debugPrint('Erro ao carregar usuario');
+      debugPrint('Erro ao carregar usuário');
     }
 
     if (user != null && user.exists) {

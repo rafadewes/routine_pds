@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_mobx/flutter_mobx.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:table_calendar/table_calendar.dart';
-
 import '../../controllers/emocionario/emocionario_controller.dart';
 import 'emojis_button.dart';
 
@@ -49,7 +48,7 @@ class _CustomFABWidgetState extends State<CustomFABEmocionarioWidget> {
             appBar: AppBar(
               backgroundColor: const Color(0xff23212C),
               title: Text(
-                'Emocionario',
+                'Emocionário',
                 style: GoogleFonts.urbanist(
                   color: Colors.white,
                 ),

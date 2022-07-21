@@ -1,5 +1,4 @@
 import 'package:mobx/mobx.dart';
-
 import '../../models/result_message.dart';
 import '../../models/user.dart';
 import '../../repositories/emocionario_repository.dart';

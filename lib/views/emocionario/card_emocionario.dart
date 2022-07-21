@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-
-
 import '../../controllers/emocionario/emocionario_controller.dart';
 import '../../models/user.dart';
 import '../../repositories/emocionario_repository.dart';

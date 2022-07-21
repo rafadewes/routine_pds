@@ -1,8 +1,6 @@
 import 'dart:math';
-
 import 'package:mobx/mobx.dart';
 import 'package:provider/provider.dart';
-
 import '../../models/notification_service.dart';
 import '../../models/result_message.dart';
 import '../../models/user.dart';
@@ -75,6 +73,9 @@ abstract class _HabitoControllerBase with Store {
     );
 
     if (habito.lembrete == true) {
+      if (habito.horarios!.isEmpty) {
+      habito.horarios!.add('${Random().nextInt(15) + 8}:00');
+    }
       if (habito.dias!.every((element) => element == true)) {
         for (var element in habito.horarios!) {
           var notificarionId = Random().nextInt(10000);
@@ -161,6 +162,10 @@ abstract class _HabitoControllerBase with Store {
       habito.lembrete = notification;
       habito.nomeHabito = text;
       habito.notificationId = [];
+
+      if (habito.horarios!.isEmpty){
+        habito.horarios!.add('${Random().nextInt(15) + 8}:00');
+      }
     } else {
       habito.dias = [];
       habito.horarios = [];
